@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    char ch;
+    printf("Enter a character:\n");
+    scanf("%c", &ch);
+    if (ch >= 'A' && ch <= 'Z'){
+        printf("You entered an uppercase letter.\n");
+    }
+    else if (ch >= 'a' && ch <= 'z'){
+        printf("You entered a lowercase letter.\n");
+    }
+    else if (ch >= '0' && ch <= '9'){
+        printf("You entered a number.\n");
+    }
+    else{
+        printf("You entered a special character.\n");
+    }
+    return 0;
+    
+}
